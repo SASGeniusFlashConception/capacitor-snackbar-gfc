@@ -14,20 +14,20 @@
 ## Sommaire
 
 1. [Plateformes prise en charge](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#1-plateformes-prise-en-charge) 
-2. [Installation](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#2-installation) 
-    2. [Récuperation du package sur npm](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#r%C3%A9cuperation-du-package-sur-npm) 
-    2. [Ajout du plugin dans votre MainActivity.java](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#ajout-du-plugin-dans-votre-mainactivityjava) 
+2. [Installation](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#2-installation)  
+    2.1 [Récuperation du package sur npm](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#r%C3%A9cuperation-du-package-sur-npm)  
+    2.2 [Ajout du plugin dans votre MainActivity.java](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#ajout-du-plugin-dans-votre-mainactivityjava)   
 3. [Screenshot](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#3-screenshot) 
 4. [Méthodes du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#4-m%C3%A9thodes-du-plugin) 
-5. [Interfaces du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#5-interfaces-du-plugin) 
-    5. [SnackbarOpts](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#snackbaropts) 
-6. [Enums du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#6-enums-du-plugin) 
-    6. [DURATION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#duration_enum) 
-    6. [POSITION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#position_enum) 
-7. [Utilisation du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#7-utilisation-du-plugin) 
-    7. [Intégration du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#int%C3%A9gration-du-plugin) 
-    7. [Méthode show(options:SnackbarOpts)](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#m%C3%A9thode-showoptions-snackbaropts) 
-    7. [Méthode addListener('snackbarEvent')](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#m%C3%A9thode-addlistenersnackbarevent) 
+5. [Interfaces du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#5-interfaces-du-plugin)  
+    5.1 [SnackbarOpts](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#snackbaropts)   
+6. [Enums du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#6-enums-du-plugin)   
+    6.1 [DURATION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#duration_enum)   
+    6.2 [POSITION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#position_enum)  
+7. [Utilisation du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#7-utilisation-du-plugin)  
+    7.1 [Intégration du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#int%C3%A9gration-du-plugin)  
+    7.2 [Méthode show(options:SnackbarOpts)](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#m%C3%A9thode-showoptions-snackbaropts)  
+    7.3 [Méthode addListener('snackbarEvent')](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#m%C3%A9thode-addlistenersnackbarevent)  
 8. [Demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#8-demo-du-plugin) 
 9. [Nos autres plugins](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#9-nos-autres-plugins) 
 
@@ -36,11 +36,11 @@
 - [x] Android
 
 ## 2. Installation
-### Récuperation du package sur npm
+### 2.1 Récuperation du package sur npm
 
 ``` npm install capacitor-snackbar-gfc --save ```
 
-### Ajout du plugin dans votre MainActivity.java
+### 2.2 Ajout du plugin dans votre MainActivity.java
 > Le fichier MainActivity est disponible dans ``app/java/packageid/`` depusi android studio
 
 ```java
@@ -71,7 +71,7 @@
 | addListener(eventName: 'snackbarEvent', listenerFunc: () => void): PluginListenerHandle | Disponible|
 
 ## 5. Interfaces du plugin
-### SnackbarOpts
+### 5.1 SnackbarOpts
 | Propriété      | Etat       | Type         | Defaut   | Commentaire                                                 |
 |:---------------|:-----------|:-------------|:---------|:------------------------------------------------------------|
 | text           | Obligatoire| string       | null     |                                                             |
@@ -83,27 +83,27 @@
 | messageColor   | Optionel   | string       | '#FFFFFF'| Les coleurs devront commencer par # et contenir 6 caractères|
 
 ## 6. Enums du plugin
-### DURATION_ENUM
+### 6.1 DURATION_ENUM
 | Propriété | Valeur      |
 |:----------|:------------|
 | SHORT     | 'short'     |
 | LONG      | 'long'      |
 | INDEFINITE| 'indefinite'|                                                           
  
-### POSITION_ENUM
+### 6.2 POSITION_ENUM
  | Propriété| Valeur   |
  |:---------|:---------|
  | DEFAULT  | 'default'|
  | CENTER   | 'center' |
 
 ## 7. Utilisation du plugin
-### Intégration du plugin
+### 7.1 Intégration du plugin
 ```typescript
 // Autres imports...
 import{Plugins} from '@capacitor/core'
 const {SnackBarGFC} = Plugins;
 ```
-### Méthode show(options: SnackbarOpts)
+### 7.2 Méthode show(options: SnackbarOpts)
 ```typescript
 const opts: SnackbarOpts = {
     text: 'Votre message...',
@@ -117,7 +117,7 @@ const opts: SnackbarOpts = {
 
 SnackBarGFC.show(opts);
 ```
-### Méthode addListener('snackbarEvent')
+### 7.3 Méthode addListener('snackbarEvent')
 > Cette évenement est déclenché lorsque l'utilisateur clique sur le bouton du composant
 ```typescript
     ngOnInit() {
