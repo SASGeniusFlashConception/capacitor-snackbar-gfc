@@ -1,0 +1,7 @@
+{
+  "name": "SnackBarGFCDemo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
