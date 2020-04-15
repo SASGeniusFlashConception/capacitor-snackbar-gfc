@@ -1,29 +1,35 @@
 # SnackBarGFC - Android
 
+[![Version Npm](https://img.shields.io/npm/v/capacitor-snackbar-gfc)](https://www.npmjs.com/package/capacitor-snackbar-gfc)
+
 > Le plugin **capacitor-snackbar-gfc** est une implementation native du composant SnackBars d'Android.
 > Vous pouvez maintenant utiliser ce package comme plugin [Ionic Capacitor](https://capacitor.ionicframework.com) dans votre application.
 
-## Soutenez nos developpements
+## Soutenez nos développements
 > Votre don nous permettra de developper plus de plugin open source mais également a maintenir ceux déjà publiés pour garantir une compatibilité avec les future version d'android, d'ios et de capacitor.
->Merci de votre soutien ! 
+> Merci de votre soutien ! 
 
 ❤[Je fais un don](paypal.me/GFCPAYPAL)❤
 
-1. [Plateformes prise en charge](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#1-Plateformes-prise-en-charge) 
-2. [Installation](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#2-Installation) 
-3. [Screenshot](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#3-Screenshot) 
-4. [Méthodes du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#4-Méthodes-du-plugin) 
-5. [Interfaces du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#5-Interfaces-du-plugin) 
-    5. [SnackbarOpts](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#SnackbarOpts) 
-6. [Enums du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#6-Enums-du-plugin) 
-    6. [DURATION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#DURATION_ENUM) 
-    6. [POSITION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#POSITION_ENUM)
-7. [Utilisation du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#7-Utilisation-du-plugin) 
-    7. [Intégration du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#Intégration du plugin) 
-    7. [Méthode show(options:SnackbarOpts)](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#Méthode-show(options:SnackbarOpts)) 
-    7. [Méthode addListener('snackbarEvent')](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#Méthode-addListener('snackbarEvent')) 
-8. [Demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#8-Demo) 
-9. [Nos autres plugins](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc#9-Nos-autres-plugins)
+## Sommaire
+
+1. [Plateformes prise en charge](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#1-plateformes-prise-en-charge) 
+2. [Installation](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#2-installation) 
+    2. [Récuperation du package sur npm](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#r%C3%A9cuperation-du-package-sur-npm) 
+    2. [Ajout du plugin dans votre MainActivity.java](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#ajout-du-plugin-dans-votre-mainactivityjava) 
+3. [Screenshot](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#3-screenshot) 
+4. [Méthodes du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#4-m%C3%A9thodes-du-plugin) 
+5. [Interfaces du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#5-interfaces-du-plugin) 
+    5. [SnackbarOpts](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#snackbaropts) 
+6. [Enums du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#6-enums-du-plugin) 
+    6. [DURATION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#duration_enum) 
+    6. [POSITION_ENUM](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#position_enum) 
+7. [Utilisation du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#7-utilisation-du-plugin) 
+    7. [Intégration du plugin](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#int%C3%A9gration-du-plugin) 
+    7. [Méthode show(options:SnackbarOpts)](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#m%C3%A9thode-showoptions-snackbaropts) 
+    7. [Méthode addListener('snackbarEvent')](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#m%C3%A9thode-addlistenersnackbarevent) 
+8. [Demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#8-demo-du-plugin) 
+9. [Nos autres plugins](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#9-nos-autres-plugins) 
 
 
 ## 1. Plateformes prise en charge
@@ -32,7 +38,7 @@
 ## 2. Installation
 ### Récuperation du package sur npm
 
-    npm install capacitor-snackbar-gfc --save
+``` npm install capacitor-snackbar-gfc --save ```
 
 ### Ajout du plugin dans votre MainActivity.java
 > Le fichier MainActivity est disponible dans ``app/java/packageid/`` depusi android studio
@@ -123,12 +129,12 @@ SnackBarGFC.show(opts);
 
 ## 8. Demo du plugin
 
-> Téléchargez notre [demo](). Elle contient deux exemples: une snackbar light et une snackbar dark.
+> Téléchargez notre [demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/tree/master/demo/SnackBarGFCDemo). Elle contient deux exemples: une snackbar light et une snackbar dark.
 
 ## 9. Nos autres plugins
 
 | Nom              | Package                          | Version | Plateformes |
 |:-----------------|:---------------------------------|:--------|:------------|
-|    AppRateGFC    | [capacitor-datetimepicket-gfc]() | 1.0.0   | Android     |
-| DateTimePickerGFC| [capacitor-datetimepicket-gfc]() | 1.0.0   | Android     |
-| CalendarEventGFC | [capacitor-datetimepicket-gfc]() | 1.0.0   | Android     |
+| AppRateGFC | [capacitor-app-rate-gfc](https://github.com/SASGeniusFlashConception/capacitor-app-rate-gfc) | 1.0.0 | Android |
+| DateTimePickerGFC | [capacitor-datetimepicker-gfc](https://github.com/SASGeniusFlashConception/capacitor-datetimepicker-gfc) | 1.0.0 | Android |
+| CalendarEventGFC | [capacitor-calendarevent-gfc](https://github.com/SASGeniusFlashConception/capacitor-calendarevent-gfc) | 1.0.0 | Android |
