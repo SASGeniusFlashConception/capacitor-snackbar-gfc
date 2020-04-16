@@ -15,19 +15,19 @@
 
 1. [Plateformes prise en charge](#1-plateformes-prise-en-charge) 
 2. [Installation](#2-installation)  
-    2.1 [Récuperation du package sur npm](#r%C3%A9cuperation-du-package-sur-npm)  
-    2.2 [Ajout du plugin dans votre MainActivity.java](#ajout-du-plugin-dans-votre-mainactivityjava)   
+    2.1 [Récuperation du package sur npm](#21-r%C3%A9cuperation-du-package-sur-npm)  
+    2.2 [Ajout du plugin dans votre MainActivity.java](#22-ajout-du-plugin-dans-votre-mainactivityjava)   
 3. [Screenshot](#3-screenshot) 
 4. [Méthodes du plugin](#4-m%C3%A9thodes-du-plugin) 
 5. [Interfaces du plugin](#5-interfaces-du-plugin)  
-    5.1 [SnackbarOpts](#snackbaropts)   
+    5.1 [SnackbarOpts](#51-snackbaropts)   
 6. [Enums du plugin](#6-enums-du-plugin)   
-    6.1 [DURATION_ENUM](#duration_enum)   
-    6.2 [POSITION_ENUM](#position_enum)  
+    6.1 [DURATION_ENUM](#61-duration_enum)   
+    6.2 [POSITION_ENUM](#62-position_enum)  
 7. [Utilisation du plugin](#7-utilisation-du-plugin)  
-    7.1 [Intégration du plugin](#int%C3%A9gration-du-plugin)  
-    7.2 [Méthode show(options:SnackbarOpts)](#m%C3%A9thode-showoptions-snackbaropts)  
-    7.3 [Méthode addListener('snackbarEvent')](#m%C3%A9thode-addlistenersnackbarevent)  
+    7.1 [Intégration du plugin](#71-int%C3%A9gration-du-plugin)  
+    7.2 [Méthode show(options:SnackbarOpts)](#72-m%C3%A9thode-showoptions-snackbaropts)  
+    7.3 [Méthode addListener('snackbarEvent')](#73-m%C3%A9thode-addlistenersnackbarevent)  
 8. [Demo](#8-demo-du-plugin) 
 9. [Nos autres plugins](#9-nos-autres-plugins) 
 
@@ -129,12 +129,12 @@ SnackBarGFC.show(opts);
 
 ## 8. Demo du plugin
 
-> Téléchargez notre [demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/tree/master/demo/SnackBarGFCDemo). Elle contient deux exemples: une snackbar light et une snackbar dark.
+> Téléchargez notre [demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/tree/master/demo/SnackBarGFCDemo/?target=_blank). Elle contient deux exemples: une snackbar light et une snackbar dark.
 
 ## 9. Nos autres plugins
 
 | Nom              | Package                          | Version | Plateformes |
 |:-----------------|:---------------------------------|:--------|:------------|
-| AppRateGFC | [capacitor-app-rate-gfc](https://github.com/SASGeniusFlashConception/capacitor-app-rate-gfc) | 1.0.0 | Android |
-| DateTimePickerGFC | [capacitor-datetimepicker-gfc](https://github.com/SASGeniusFlashConception/capacitor-datetimepicker-gfc) | 1.0.0 | Android |
-| CalendarEventGFC | [capacitor-calendarevent-gfc](https://github.com/SASGeniusFlashConception/capacitor-calendarevent-gfc) | 1.0.0 | Android |
+| AppRateGFC | [capacitor-app-rate-gfc](https://github.com/SASGeniusFlashConception/capacitor-app-rate-gfc/?target=_blank) | 1.0.0 | Android |
+| DateTimePickerGFC | [capacitor-datetimepicker-gfc](https://github.com/SASGeniusFlashConception/capacitor-datetimepicker-gfc/?target=_blank) | 1.0.0 | Android |
+| CalendarEventGFC | [capacitor-calendarevent-gfc](https://github.com/SASGeniusFlashConception/capacitor-calendarevent-gfc/?target=_blank) | 1.0.0 | Android |
