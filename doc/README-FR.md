@@ -1,19 +1,19 @@
 # SnackBarGFC - Android
 
-[![Version Npm](https://img.shields.io/npm/v/capacitor-snackbar-gfc)](https://www.npmjs.com/package/capacitor-snackbar-gfc)
+[![Version Npm](https://img.shields.io/npm/v/capacitor-snackbar-gfc)](https://www.npmjs.com/package/capacitor-snackbar-gfc){:target="_blank"}
 
 > Le plugin **capacitor-snackbar-gfc** est une implementation native du composant SnackBars d'Android.
-> Vous pouvez maintenant utiliser ce package comme plugin [Ionic Capacitor](https://capacitor.ionicframework.com) dans votre application.
+> Vous pouvez maintenant utiliser ce package comme plugin [Ionic Capacitor](https://capacitor.ionicframework.com){:target="_blank"} dans votre application.
 
 ## Soutenez nos développements
 > Votre don nous permettra de developper plus de plugin open source mais également a maintenir ceux déjà publiés pour garantir une compatibilité avec les future version d'android, d'ios et de capacitor.
 > Merci de votre soutien ! 
 
-❤[Je fais un don](paypal.me/GFCPAYPAL)❤
+❤[Je fais un don](paypal.me/GFCPAYPAL/?target=_blank)❤
 
 ## Sommaire
 
-1. [Plateformes prise en charge](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#1-plateformes-prise-en-charge) 
+1. [Plateformes prise en charge](#1-plateformes-prise-en-charge) 
 2. [Installation](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#2-installation)  
     2.1 [Récuperation du package sur npm](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#r%C3%A9cuperation-du-package-sur-npm)  
     2.2 [Ajout du plugin dans votre MainActivity.java](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/blob/master/doc/README-FR.md#ajout-du-plugin-dans-votre-mainactivityjava)   
