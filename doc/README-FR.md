@@ -9,7 +9,7 @@
 > Votre don nous permettra de developper plus de plugin open source mais également a maintenir ceux déjà publiés pour garantir une compatibilité avec les future version d'android, d'ios et de capacitor.
 > Merci de votre soutien ! 
 
-❤[Je fais un don](https://paypal.me/GFCPAYPAL/?target=_blank)❤
+❤[Je fais un don](https://paypal.me/GFCPAYPAL)❤
 
 ## Sommaire
 
@@ -129,12 +129,12 @@ SnackBarGFC.show(opts);
 
 ## 8. Demo du plugin
 
-> Téléchargez notre [demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/tree/master/demo/SnackBarGFCDemo/?target=_blank). Elle contient deux exemples: une snackbar light et une snackbar dark.
+> Téléchargez notre [demo](https://github.com/SASGeniusFlashConception/capacitor-snackbar-gfc/tree/master/demo/SnackBarGFCDemo). Elle contient deux exemples: une snackbar light et une snackbar dark.
 
 ## 9. Nos autres plugins
 
 | Nom              | Package                          | Version | Plateformes |
 |:-----------------|:---------------------------------|:--------|:------------|
-| AppRateGFC | [capacitor-app-rate-gfc](https://github.com/SASGeniusFlashConception/capacitor-app-rate-gfc/?target=_blank) | 1.0.0 | Android |
-| DateTimePickerGFC | [capacitor-datetimepicker-gfc](https://github.com/SASGeniusFlashConception/capacitor-datetimepicker-gfc/?target=_blank) | 1.0.0 | Android |
-| CalendarEventGFC | [capacitor-calendarevent-gfc](https://github.com/SASGeniusFlashConception/capacitor-calendarevent-gfc/?target=_blank) | 1.0.0 | Android |
+| AppRateGFC | [capacitor-app-rate-gfc](https://github.com/SASGeniusFlashConception/capacitor-app-rate-gfc) | 1.0.0 | Android |
+| DateTimePickerGFC | [capacitor-datetimepicker-gfc](https://github.com/SASGeniusFlashConception/capacitor-datetimepicker-gfc) | 1.0.0 | Android |
+| CalendarEventGFC | [capacitor-calendarevent-gfc](https://github.com/SASGeniusFlashConception/capacitor-calendarevent-gfc) | 1.0.0 | Android |
