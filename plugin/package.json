@@ -6,12 +6,9 @@
   "types": "dist/esm/index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "rimraf ./dist",
-    "devPublish": "sudo npm run build && npm publish --registry http://localhost:4873",
-    "devUnpublish": "sudo npm unpublish capacitor-snackbar-gfc --registry http://localhost:4873 --force",
-    "prodPublish": "sudo npm run build && npm publish",
-    "ProdUnpublish": "sudo npm unpublish capacitor-snackbar-gfc",
-    "verdaccioLogin": "sudo npm login --registry http://localhost:4873",
+    "clean": "rimraf ./dist",    
+    "prodPublish": "npm run build && npm publish",
+    "ProdUnpublish": "npm unpublish capacitor-snackbar-gfc",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
