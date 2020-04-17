@@ -9,5 +9,6 @@ declare module "@capacitor/core" {
 
 export interface SnackBarGFCPlugin {
   show(options: SnackbarOpts): Promise<{}>;
+  dismissShowingSnackbar(): Promise<{}>;
   addListener(eventName: 'snackbarEvent', listenerFunc: () => void): PluginListenerHandle;
 }

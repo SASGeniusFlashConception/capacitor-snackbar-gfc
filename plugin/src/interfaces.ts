@@ -1,11 +1,22 @@
-import {DURATION_ENUM, POSITION_ENUM} from "./enums";
+import {DURATION_ENUM, TYPE_LINE_ENUM, POSITION_ENUM} from "./enums";
 
 export interface SnackbarOpts {
-    text: string;
-    btnText: string;
+    message: string;
     duration: DURATION_ENUM;
-    positionText?: POSITION_ENUM;
+    messageStyle: MessageStyleOpts;
+    buttonAction: boolean;
+    buttonActionStyle?: ButtonActionStyleOpts;
     backgroundColor?: string;
-    buttonTextColor?:string;
+}
+
+export interface ButtonActionStyleOpts {
+    buttonActionText: string;
+    buttonActionColor?:string;
+}
+
+export interface MessageStyleOpts {
+    messagePosition: POSITION_ENUM;
+    messageTypeLine: TYPE_LINE_ENUM;
+    messageMaxLine?: number;
     messageColor?: string;
 }
