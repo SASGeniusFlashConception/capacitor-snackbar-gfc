@@ -6,10 +6,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "installPlugin": "npm install capacitor-snackbar-gfc --save --registry http://localhost:4873",
-    "uninstallPlugin": "npm uninstall capacitor-snackbar-gfc --save --registry http://localhost:4873",
-    "resources": "capacitor-resources -p android",
-    "serve": "ionic serve --lab -w=firefox",
+    "installPlugin": "npm install capacitor-snackbar-gfc --save",
+    "uninstallPlugin": "npm uninstall capacitor-snackbar-gfc --save",
     "addAndroid": "npx cap add android",
     "capSync": "npx cap sync",
     "capCopy": "npx cap copy",
