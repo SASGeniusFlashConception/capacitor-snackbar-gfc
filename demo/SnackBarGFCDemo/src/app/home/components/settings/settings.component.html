@@ -1,0 +1,96 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start" (click)="closeSettings()" class="ion-padding-start">
+            <ion-icon slot="icon-only" name="close"></ion-icon>
+        </ion-buttons>
+        <ion-title>
+            SnackBar Settings
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <form [formGroup]="formSnackBarSettings">
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+            <ion-item *ngIf="formSnackBarSettings.get('message') && formSnackBarSettings.get('messageTypeLine') && formSnackBarSettings.get('messageTypeLine').value !== 'multiline'">
+                <ion-label position="stacked"
+                           [innerHTML]="'Message <ion-text color=\'danger\'>*</ion-text>'"></ion-label>
+                <ion-input formControlName="message" required type="text"></ion-input>
+            </ion-item>
+            <ion-item *ngIf="formSnackBarSettings.get('message') && formSnackBarSettings.get('messageTypeLine') && formSnackBarSettings.get('messageTypeLine').value === 'multiline'">
+                <ion-label position="stacked"
+                           [innerHTML]="'Message <ion-text color=\'danger\'>*</ion-text>'"></ion-label>
+                <ion-textarea  formControlName="message"  required [rows]="formSnackBarSettings.get('messageMaxLine').value" [cols]="formSnackBarSettings.get('messageMaxLine').value"></ion-textarea>
+            </ion-item>
+            <ion-item *ngIf="formSnackBarSettings.get('duration')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Duration <ion-text color=\'danger\'>*</ion-text>'"></ion-label>
+                <ion-select formControlName="duration" placeholder="Select One Duration" required>
+                    <ion-select-option value="short">SHORT</ion-select-option>
+                    <ion-select-option value="long">LONG</ion-select-option>
+                    <ion-select-option value="indefinite">INDEFINITE</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('messagePosition')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Position Message <ion-text color=\'danger\'>*</ion-text>'"></ion-label>
+                <ion-select formControlName="messagePosition" placeholder="Select One Position">
+                    <ion-select-option value="default">DEFAULT</ion-select-option>
+                    <ion-select-option value="center">CENTER</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('messageTypeLine')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Message Type Line <ion-text color=\'danger\'>*</ion-text>'"></ion-label>
+                <ion-select formControlName="messageTypeLine" placeholder="Select One Position" (ionChange)="selectMessageTypeLine($event)">
+                    <ion-select-option value="default">DEFAULT</ion-select-option>
+                    <ion-select-option value="multiline">MULTILINE</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('messageMaxLine')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Max Line'"></ion-label>
+                <ion-input formControlName="messageMaxLine" type="number" min="0"></ion-input>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('messageColor')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Message Color'"></ion-label>
+                <ion-input formControlName="messageColor" type="text" class="ion-text-uppercase"></ion-input>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('buttonAction')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Show Button Action'"></ion-label>
+                <ion-checkbox formControlName="buttonAction" slot="end"  (ionChange)="selectButtonAction($event)"></ion-checkbox>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('buttonActionText')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Text Button Action <ion-text color=\'danger\'>*</ion-text>'"></ion-label>
+                <ion-input formControlName="buttonActionText" required type="text"></ion-input>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('buttonActionColor')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Button Action Color'"></ion-label>
+                <ion-input formControlName="buttonActionColor" type="text" class="ion-text-uppercase"></ion-input>
+            </ion-item>
+
+            <ion-item *ngIf="formSnackBarSettings.get('backgroundColor')">
+                <ion-label position="stacked"
+                           [innerHTML]="'Background Color'"></ion-label>
+                <ion-input formControlName="backgroundColor" type="text" class="ion-text-uppercase"></ion-input>
+            </ion-item>
+
+        </ion-list>
+        <div class="ion-padding">
+            <ion-button expand="block" (click)="saveSettings()"
+                        [disabled]="!formSnackBarSettings.valid"
+                        class="ion-no-margin"
+                        [innerHTML]="'Save settings'"></ion-button>
+        </div>
+    </form>
+</ion-content>
